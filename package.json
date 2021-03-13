@@ -1,0 +1,29 @@
+{
+	"name": "bhping",
+	"version": "1.0.0",
+	"main": "main.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "electron .",
+		"dist": "electron-builder build"
+	},
+	"devDependencies": {
+		"electron": "^12.0.1",
+		"electron-builder": "^22.10.5"
+	},
+	"dependencies": {
+		"electron-packager": "^15.2.0",
+		"jjg-ping": "^1.0.3",
+		"konva": "^7.2.5",
+		"ping": "^0.4.0",
+		"vue": "^3.0.7",
+		"ws": "^7.4.4"
+	},
+	"build": {
+		"appId": "com.corehalla.bhping",
+		"win": {
+			"target": "nsis",
+			"icon": "build/icon.ico"
+		}
+	}
+}

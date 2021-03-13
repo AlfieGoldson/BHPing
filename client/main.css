@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 300 900;
+	font-display: swap;
+	src: local('Rubik'), url('./assets/Rubik.ttf') format('ttf');
+}
+
+html,
+body {
+	background-color: #272b33;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+}
+
+#worldmap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: contain;
+	object-position: center;
+	z-index: -1;
+}
