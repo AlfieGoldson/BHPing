@@ -22,8 +22,8 @@ wss.on('connection', function connection(ws) {
 
 function createWindow() {
 	const win = new BrowserWindow({
-		width: 480,
-		height: 270,
+		width: 640,
+		height: 360,
 		webPreferences: {
 			nodeIntegration: true,
 		},
@@ -55,14 +55,10 @@ const addServer = (name, host) =>
 
 const updateServer = (name, active, latency) => {
 	const server = servers.find((s) => s.name === name);
-	server.act = active;
+	server.active = active;
 	server.latency = latency;
 
 	// console.log(`${name}: ${active ? `${latency}ms` : 'Cannot Reach Server'}`);
-
-	for (ws of sockets) {
-		ws.send(JSON.stringify({ name, active, latency }));
-	}
 };
 
 addServer('US-E', 'pingtest-atl.brawlhalla.com');
@@ -80,7 +76,13 @@ function pingServer(server) {
 }
 
 setInterval(() => {
-	for (server of servers) {
-		pingServer(server);
+	for (ws of sockets) {
+		ws.send(JSON.stringify(servers.map(({ host, ...s }) => s)));
 	}
+
+	setTimeout(() => {
+		for (server of servers) {
+			pingServer(server);
+		}
+	}, 1000);
 }, 1000);
