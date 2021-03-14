@@ -1438,11 +1438,6 @@ keyv@^3.0.0:
   dependencies:
     json-buffer "3.0.0"
 
-konva@^7.2.5:
-  version "7.2.5"
-  resolved "https://registry.yarnpkg.com/konva/-/konva-7.2.5.tgz#9b4ac3a353e6be66e3e69123bf2a0cbc61efeb26"
-  integrity sha512-yk/li8rUF+09QNlOdkwbEId+QvfATMe/aMGVouWW1oFoUVTYWHsQuIAE6lWy11DK8mLJEJijkNAXC5K+NVlMew==
-
 latest-version@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-5.1.0.tgz#119dfe908fe38d15dfa43ecd13fa12ec8832face"
@@ -1698,14 +1693,6 @@ pify@^3.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
 
-ping@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/ping/-/ping-0.4.0.tgz#2f382d2143de59671a33c082abab28c853b29715"
-  integrity sha512-qymcd5Bwv74b9o7qzAduN8wffr3ba11ZLBjY6gPQR2LpQ++9He8keSRFSaBb3OcR4SvXCWhi9VbLD1ycUNhz9Q==
-  dependencies:
-    q "1.x"
-    underscore "^1.12.0"
-
 plist@^3.0.0, plist@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.1.tgz#a9b931d17c304e8912ef0ba3bdd6182baf2e1f8c"
@@ -1754,11 +1741,6 @@ pupa@^2.1.1:
   integrity sha512-l1jNAspIBSFqbT+y+5FosojNpVpF94nlI+wDUpqP9enwOTfHx9f0gh5nB96vl+6yTpsJsypeNrwfzPrKuHB41A==
   dependencies:
     escape-goat "^2.0.0"
-
-q@1.x:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
-  integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
 rc@^1.2.8:
   version "1.2.8"
@@ -2158,11 +2140,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-underscore@^1.12.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.12.0.tgz#4814940551fc80587cef7840d1ebb0f16453be97"
-  integrity sha512-21rQzss/XPMjolTiIezSu3JAjgagXKROtNrYFEOWK109qY1Uv2tVjPTZ1ci2HgvQDA16gHYSthQIJfB+XId/rQ==
 
 unique-string@^2.0.0:
   version "2.0.0"

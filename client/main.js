@@ -164,7 +164,6 @@ Vue.createApp(App).mount('#App');
 function updateCanvas(canvas, servers) {
 	if (!canvas) return;
 	canvas.clearRect(0, 0, 1920, 1080);
-	console.log(servers.length);
 
 	for (server of servers) {
 		const { name, latency, active } = server;
@@ -188,6 +187,5 @@ function updateCanvas(canvas, servers) {
 
 		canvas.font = 'bold 24px Rubik';
 		canvas.fillText(name, textPos[0], textPos[1] - 64);
-		console.log(`Updated server ${name}!`);
 	}
 }

@@ -7,13 +7,7 @@ const wss = new WebSocket.Server({ port: 9911 });
 let sockets = [];
 
 wss.on('connection', function connection(ws) {
-	console.log('Client Connected!');
-
 	sockets.push(ws);
-
-	ws.on('message', function incoming(message) {
-		console.log('received: %s', message);
-	});
 
 	ws.on('close', () => {
 		sockets = sockets.filter((s) => s !== ws);
@@ -57,8 +51,6 @@ const updateServer = (name, active, latency) => {
 	const server = servers.find((s) => s.name === name);
 	server.active = active;
 	server.latency = latency;
-
-	// console.log(`${name}: ${active ? `${latency}ms` : 'Cannot Reach Server'}`);
 };
 
 addServer('US-E', 'pingtest-atl.brawlhalla.com');

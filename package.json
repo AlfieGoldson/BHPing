@@ -15,8 +15,6 @@
 	"dependencies": {
 		"electron-packager": "^15.2.0",
 		"jjg-ping": "^1.0.3",
-		"konva": "^7.2.5",
-		"ping": "^0.4.0",
 		"vue": "^3.0.7",
 		"ws": "^7.4.4"
 	},
